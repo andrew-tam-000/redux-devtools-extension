@@ -454,6 +454,12 @@ babel-plugin-check-es2015-constants@^6.3.13:
   dependencies:
     babel-runtime "^6.0.0"
 
+babel-plugin-inline-import@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/babel-plugin-inline-import/-/babel-plugin-inline-import-2.0.5.tgz#1d0bf5c55939d4289f2869247400d0ad5b701a0d"
+  dependencies:
+    require-resolve "0.0.2"
+
 babel-plugin-react-transform@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-transform/-/babel-plugin-react-transform-2.0.2.tgz#515bbfa996893981142d90b1f9b1635de2995109"
@@ -2095,7 +2101,7 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.6:
+fbjs@^0.8.1, fbjs@^0.8.4:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.8.tgz#02f1b6e0ea0d46c24e0b51a2d24df069563a5ad6"
   dependencies:
@@ -2107,7 +2113,7 @@ fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.6:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-fbjs@^0.8.5, fbjs@^0.8.8, fbjs@^0.8.9:
+fbjs@^0.8.5, fbjs@^0.8.6, fbjs@^0.8.8, fbjs@^0.8.9:
   version "0.8.12"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.12.tgz#10b5d92f76d45575fd63a217d4ea02bea2f8ed04"
   dependencies:
@@ -4730,6 +4736,10 @@ path-exists@^2.0.0, path-exists@^2.1.0:
   dependencies:
     pinkie-promise "^2.0.0"
 
+path-extra@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/path-extra/-/path-extra-1.0.3.tgz#7c112189a6e50d595790e7ad2037e44e410c1166"
+
 path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
@@ -5412,10 +5422,11 @@ redux-devtools-log-monitor@^1.2.0:
     react-pure-render "^1.0.2"
     redux-devtools-themes "^1.0.0"
 
-"redux-devtools-store-modifier@github:andrew-tam-000/redux-devtools-store-modifier":
+redux-devtools-store-modifier@andrew-tam-000/redux-devtools-store-modifier, "redux-devtools-store-modifier@github:andrew-tam-000/redux-devtools-store-modifier":
   version "1.0.0"
-  resolved "https://codeload.github.com/andrew-tam-000/redux-devtools-store-modifier/tar.gz/032467188f8156792bab1f019176883360319376"
+  resolved "https://codeload.github.com/andrew-tam-000/redux-devtools-store-modifier/tar.gz/a2c3b9c165f5bd42f3f5dd787380a41bac3a7c78"
   dependencies:
+    babel-plugin-inline-import "^2.0.5"
     lodash "^4.17.4"
     react "^15.5.4"
     react-dom "^15.5.4"
@@ -5701,6 +5712,12 @@ request@~2.74.0:
     stringstream "~0.0.4"
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
+
+require-resolve@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/require-resolve/-/require-resolve-0.0.2.tgz#bab410ab1aee2f3f55b79317451dd3428764e6f3"
+  dependencies:
+    x-path "^0.0.2"
 
 resolve-dir@^0.1.0:
   version "0.1.1"
@@ -6585,6 +6602,12 @@ ws@1.1.1:
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"
+
+x-path@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/x-path/-/x-path-0.0.2.tgz#294d076bb97a7706cc070bbb2a6fd8c54df67b12"
+  dependencies:
+    path-extra "^1.0.2"
 
 xml-escape@~1.0.0:
   version "1.0.0"

@@ -82,6 +82,7 @@
     "redux": "^3.5.2",
     "redux-devtools": "^3.4.0",
     "redux-devtools-instrument": "^1.8.1",
+    "redux-devtools-store-modifier": "andrew-tam-000/redux-devtools-store-modifier",
     "remotedev-app": "andrew-tam-000/remotedev-app",
     "remotedev-monitor-components": "^0.0.5",
     "remotedev-serialize": "^0.1.0",
