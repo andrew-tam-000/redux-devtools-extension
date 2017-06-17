@@ -4,7 +4,7 @@
   "description": "Redux Developer Tools for debugging application state changes.",
   "scripts": {
     "start": "gulp",
-    "build:extension": "rimraf build/extension && cross-env BABEL_ENV=production gulp build:extension",
+    "build:extension": "rimraf build/extension && npm run build --prefix node_modules/remotedev-app && cross-env BABEL_ENV=production gulp build:extension",
     "build:firefox": "cross-env BABEL_ENV=production gulp build:firefox",
     "build:examples": "babel-node examples/buildAll.js",
     "precompress:extension": "npm run lint && npm run test:app && npm run build:extension && npm run test:chrome && npm run test:electron",
